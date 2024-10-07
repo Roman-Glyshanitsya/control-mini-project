@@ -19,32 +19,48 @@
   <!-- header -->
   <header class="header">
     <div class="container">
-      <nav class="header__nav">
-        <ul class="header__nav__list">
-          <li class="header__nav__item">
-            <a href="index.html" class="header__nav__link">Головна</a>
-          </li>
-          <li class="header__nav__item">
-            <a href="#" class="header__nav__link">Наші проекти</a>
-          </li>
-          <li class="header__nav__item">
-            <a href="#" class="header__nav__link">Послуги</a>
-          </li>
-          <li class="header__nav__item">
-            <a href="#" class="header__nav__link">Новини</a>
-          </li>
-          <li class="header__nav__item">
-            <a href="#" class="header__nav__link">Контакти</a>
-          </li>
-        </ul>
-      </nav>
+      <button class="burger-button" type="button" data-menu-button>
+        <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+          <path class="line top"
+            d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+          <path class="line middle" d="m 30,50 h 40" />
+          <path
+              class="line bottom"
+              d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40"
+            />
+          </svg>
+        </button>
+        <!-- nav menu -->
+         <div class="mobile__nav-menu" data-menu>
+          <button class="mobile__nav-menu__close-button" type="button" data-menu-close></button>
+          <nav class="header__nav"></nav>
+            <ul class="header__nav__list">
+              <li class="header__nav__item">
+                <a href="index.html" class="header__nav__link">Головна</a>
+              </li>
+              <li class="header__nav__item">
+                <a href="#" class="header__nav__link">Наші проекти</a>
+              </li>
+              <li class="header__nav__item">
+                <a href="#" class="header__nav__link">Послуги</a>
+              </li>
+              <li class="header__nav__item">
+                <a href="#" class="header__nav__link">Новини</a>
+              </li>
+              <li class="header__nav__item">
+                <a href="#" class="header__nav__link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+         </div>
+          
     </div>
   </header>
 
   <!-- main -->
   <main class="main">
     <!-- hero -->
-    <section class="hero">
+    <!-- <section class="hero">
       <div class="contaner">
         <p class="hero__text">Передова IT студія</p>
         <h1 class="hero__title">
@@ -52,9 +68,9 @@
         </h1>
         <button class="hero__button">Наші проекти</button>
       </div>
-    </section>
+    </section> -->
     <!-- about -->
-    <section class="about">
+    <!-- <section class="about">
       <div class="contaner">
         <h2 class="about__title">
           Ми створюємо мобільні додатки для великих корпорацій
@@ -98,9 +114,9 @@
         </ul>
         <button type="button" class="about__button">Всі послуги</button>
       </div>
-    </section>
+    </section> -->
     <!-- standarts -->
-    <section class="standarts">
+    <!-- <section class="standarts">
       <div class="container">
         <h2 class="standarts__title">Високі стандарти розробки</h2>
         <p class="standarts__text">
@@ -148,9 +164,9 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
     <!-- works -->
-    <section class="works">
+    <!-- <section class="works">
       <div class="container">
         <h2 class="works__title">Наші роботи на яких ми спеціалізуємось</h2>
         <button class="works__button">Всі послуги</button>
@@ -196,10 +212,9 @@
           </li>
         </ul>
       </div>
-    </section>
-
+    </section> -->
     <!-- projects -->
-    <section class="projects">
+    <!-- <section class="projects">
       <div class="container">
         <h2 class="projects__title">Наші проекти</h2>
         <p class="projects__text">
@@ -223,9 +238,9 @@
         </ul>
         <button class="projects__btn" type="button">Всі проекти</button>
       </div>
-    </section>
+    </section> -->
     <!-- video -->
-    <section class="video">
+    <!-- <section class="video">
       <div class="container">
         <h2 class="video__title">Відео про нашу роботу</h2>
         <p class="video__text">Просто подивіться, як ми працюємо</p>
@@ -238,9 +253,9 @@
           </button>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- subscribe -->
-    <section class="subscribe">
+    <!-- <section class="subscribe">
       <div class="container">
         <h2 class="subscribe__title">Підпишіться на нашу розсилку</h2>
         <p class="subscribe__text">
@@ -254,11 +269,12 @@
           Ми не шлем спам, і не передаємо нікому ваші дані
         </p>
       </div>
-    </section>
+    </section> -->
   </main>
   <!-- footer -->
 
-  <footer class="footer">
+  <!-- <footer class="footer">
+
     <div class="container">
       <ul class="footer__main-list">
         <li class="footer__main-item">
@@ -388,7 +404,8 @@
         </li>
       </ul>
     </div>
-  </footer>
+  </footer> -->
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
