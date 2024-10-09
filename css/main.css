@@ -94,7 +94,7 @@ body {
     visibility: hidden;
     pointer-events: none;
     transform: translateX(100%);
-    transition: opacity 250ms linear, transform 250ms linear;
+    transition: opacity 350ms linear, transform 350ms linear;
   }
   .mobile__nav-menu.is-open {
     opacity: 1;
@@ -172,5 +172,37 @@ body {
   }
   .header__nav__link {
     position: relative;
+    padding-bottom: 20px;
+  }
+  .header__nav__link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    transform: scale(0);
+    transform-origin: center right;
+    transition: transform 350ms linear;
+  }
+  .header__nav__link:hover::after {
+    transform: scale(1);
+    transform-origin: center left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .header__nav__list {
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+  }
+  .header__nav__link {
+    padding-bottom: 40px;
   }
 }/*# sourceMappingURL=main.css.map */

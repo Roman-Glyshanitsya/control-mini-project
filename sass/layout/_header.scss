@@ -23,7 +23,7 @@
     visibility: hidden;
     pointer-events: none;
     transform: translateX(100%);
-    transition: opacity 250ms linear, transform 250ms linear;
+    transition: opacity $animation, transform $animation;
   }
 
   .mobile__nav-menu.is-open {
@@ -114,9 +114,44 @@
 
   .header__nav__link {
     position: relative;
+    padding-bottom: 20px;
   }
 
   .header__nav__link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    transform: scale(0);
+    transform-origin: center right;
+    transition: transform $animation;
+  }
+
+  .header__nav__link:hover::after{
+    transform: scale(1);
+    transform-origin: center left;
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .header__nav__list {
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+  }
+
+  .header__nav__link {
+    padding-bottom: 40px;
   }
 
 }
