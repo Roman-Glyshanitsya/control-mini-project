@@ -102,6 +102,24 @@ body {
     pointer-events: auto;
     transform: translateX(0);
   }
+  .burger-button {
+    position: relative;
+    z-index: 10;
+    background-color: transparent;
+    bottom: none;
+    display: block;
+    margin-left: auto;
+  }
+  .header__nav__list {
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 30px;
+    color: white;
+  }
   .ham {
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
@@ -131,5 +149,28 @@ body {
   }
   .ham1.active .bottom {
     stroke-dashoffset: -138px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .burger-button {
+    display: none;
+  }
+  .header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .header__nav__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 39px;
+  }
+  .header__nav__item {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .header__nav__link {
+    position: relative;
   }
 }/*# sourceMappingURL=main.css.map */

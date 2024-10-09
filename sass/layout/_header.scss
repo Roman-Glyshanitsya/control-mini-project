@@ -1,11 +1,9 @@
 .header {
-    background-color: grey;
+  background-color: grey;
 }
 .mobile__nav-menu__close-button {
 }
 .header__nav {
-}
-.header__nav__list {
 }
 .header__nav__item {
 }
@@ -13,61 +11,112 @@
 }
 
 @media screen and (max-width: 767px) {
-    .mobile__nav-menu {
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        overflow: auto;
-        background-color: grey;
-        opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
-        transform: translateX(100%);
-        transition: opacity 250ms linear, transform 250ms linear;
-     
-    }
+  .mobile__nav-menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    background-color: grey;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateX(100%);
+    transition: opacity 250ms linear, transform 250ms linear;
+  }
 
-    .mobile__nav-menu.is-open {
-        opacity: 1;
-        visibility: visible;
-        pointer-events: auto;
-        transform: translateX(0);
+  .mobile__nav-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(0);
+  }
 
-    }
-// close-button style
-    .ham {
-        cursor: pointer;
-        -webkit-tap-highlight-color: transparent;
-        transition: transform 400ms;
-        -moz-user-select: none;
-        -webkit-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-    .hamRotate.active {
-        transform: rotate(45deg);
-      }
-    .line {
-        fill: none;
-        transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-        stroke: #fff;
-        stroke-width: 5.5;
-        stroke-linecap: round;
-      }
-    .ham1 .top {
-        stroke-dasharray: 40 139;
-      }
-    
-      .ham1 .bottom {
-        stroke-dasharray: 40 180;
-      }
-    .ham1.active .top {
-        stroke-dashoffset: -98px;
-      }
-    
-      .ham1.active .bottom {
-        stroke-dashoffset: -138px;
-      }
+  .burger-button {
+    position: relative;
+    z-index: 10;
+    background-color: transparent;
+    bottom: none;
+    display: block;
+    margin-left: auto;
+  }
+
+  .header__nav__list {
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 30px;
+    color: white;
+  }
+
+  // close-button style
+  .ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .hamRotate.active {
+    transform: rotate(45deg);
+  }
+  .line {
+    fill: none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: #fff;
+    stroke-width: 5.5;
+    stroke-linecap: round;
+  }
+  .ham1 .top {
+    stroke-dasharray: 40 139;
+  }
+
+  .ham1 .bottom {
+    stroke-dasharray: 40 180;
+  }
+  .ham1.active .top {
+    stroke-dashoffset: -98px;
+  }
+
+  .ham1.active .bottom {
+    stroke-dashoffset: -138px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .burger-button {
+    display: none;
+  }
+
+  .header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .header__nav__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 39px;
+  }
+
+  .header__nav__item {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .header__nav__link {
+    position: relative;
+  }
+
+  .header__nav__link::after {
+  }
+
 }
