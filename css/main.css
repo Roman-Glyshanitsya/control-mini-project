@@ -280,6 +280,18 @@ body {
   margin-bottom: 60px;
 }
 
+.about__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 55px;
+}
+
+.about__item {
+  display: flex;
+  gap: 17px;
+}
+
 .outer__circle {
   display: flex;
   justify-content: center;
@@ -306,10 +318,16 @@ body {
   fill: #4985ff;
 }
 
+.about__text-thumb {
+  width: 222px;
+  text-align: start;
+}
+
 .about__item__subtitle {
   color: #000;
   font-size: 18px;
   font-weight: 600;
+  margin-bottom: 12px;
 }
 
 .about__item__text {
@@ -317,4 +335,18 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 158%;
+}
+
+.about__button {
+  display: block;
+  padding: 15px 36px;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 30px;
+  background-color: #4985ff;
+  box-shadow: 0px 0px 10px 0px rgba(111, 111, 111, 0.25);
 }/*# sourceMappingURL=main.css.map */
