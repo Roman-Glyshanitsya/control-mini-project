@@ -58,6 +58,8 @@
 
   .standarts__thumb{
     justify-content: space-between;
+    border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 90px;
   }
 
   .standarts__title { 
@@ -76,7 +78,8 @@
   }
 
   .standarts__list {
-    display: none;
+    display: flex;
+
   }
 
   .standarts__item {

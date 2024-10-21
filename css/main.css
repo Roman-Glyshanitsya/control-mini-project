@@ -459,6 +459,8 @@ body {
   }
   .standarts__thumb {
     justify-content: space-between;
+    border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 90px;
   }
   .standarts__title {
     font-size: 36px;
@@ -473,6 +475,6 @@ body {
     width: 500px;
   }
   .standarts__list {
-    display: none;
+    display: flex;
   }
 }/*# sourceMappingURL=main.css.map */
