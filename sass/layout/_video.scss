@@ -70,8 +70,37 @@
 
 @media screen and (min-width: 768px) {
     
+    .video__title {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+    
+    .video__text {
+        margin-bottom: 70px;
+    }
+    
+    .video__thumb {
+        width: 700px;
+        margin: 0 auto;
+    }
+    
+    .video__button {
+        width: 300px;
+        height: 100px;
+    }
+
+    .video__button__icon {
+        width: 60px;
+        height: 60px;
+    }
+    
 }
 
 @media screen and (min-width: 1140px) {
+ 
+    .video__thumb {
+        width: 970px;
+      
+    }
 
 }
